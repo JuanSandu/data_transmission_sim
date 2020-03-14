@@ -8,4 +8,4 @@ Wavelets are implemented to be used for data compression before the emulation of
 All modules can be configured by modifying the configuration JSON file, which has different section for each module.
 
 # Launch
-In order to launch the simulator, you need to modify the configuration file for the desired options and to modify the bash launcher to select the simulation sequence and, if the KPI extractor is used, select an origin signal name and another final signal name (as they may be compared for some of the KPI calculation).
+In order to launch the simulator, you have to modify the configuration file for the desired options and to modify the bash launcher to select the simulation sequence and, if the KPI extractor is used, select an origin signal name and another final signal name (as they may be compared for some of the KPI calculation).
