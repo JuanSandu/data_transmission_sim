@@ -1,0 +1,58 @@
+{
+  "general": {
+    "signals_df_name": "complete_signal",
+    "signals_names": ["ax"],
+    "sample_rate_s": 0.005
+  },
+  "noise_injector": {
+    "noise_sources": ["white_noise"],
+    "white_noise": {
+      "mean": 0.0,
+      "dev": 0.2
+    },
+    "brown_noise": {
+      "mean": 0.0,
+      "dev": 0.55
+    },
+    "pink_noise": {
+      "mean": 0.0,
+      "dev": 0.2
+    },
+    "plot_signals": false
+  },
+  "data_compressor": {
+    "wavelet_family": "sym4",
+    "compression_level": 3,
+    "plot_signals": true
+  },
+  "physical_link_emulator": {
+    "sig_transm_hz": 2000.0,
+    "signal_resolution_s": 5e-4,
+    "wavelength_m": 1.0,
+    "medium": "None",
+    "sig_space_perctg": 10.0,
+    "high_level_volts": 5.0,
+    "low_level_volts": 3.5,
+    "empty_level_volts": 0.1,
+    "empty_thld": 1.75,
+    "high_thld": 4.25,
+    "max_integer_part": 9999,
+    "max_decimals": 4,
+    "water":{
+      "ro": 0.001,
+      "distance": 100
+    },
+    "plot_signals": false,
+    "axis_x_label": "Time (ms)",
+    "axis_y_label": "Voltage (V)"
+  },
+  "stats_extractor": {
+    "stats_list": ["Correlation", "Delay", "MSE", "PDS", "PDScomparison"],
+    "stats_to_plot": ["Correlation", "PDS", "PDScomparison"],
+    "time_domain_stats": ["Correlation", "Autocorrelation"]
+  },
+  "noise_classifier": {
+    "mode": "run",
+    "plot_signals": false
+  }
+}
