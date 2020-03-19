@@ -23,3 +23,71 @@ and run the simulation orchestrator:
 ```
 ./simulation_orchestrator.bash
 ```
+
+The following is a simulation terminal output example:
+
+```
+Starting simulation number 64
+
+Run mode selected.
+
+-----------------------------
+Data compression. Stage: 0
+-----------------------------
+Data compression started.
+Compression of signal ax with wavelet sym4
+Data compression process finished.
+Plotting signal...
+Closing data compression process.
+
+----------------------------------
+Physical transmission. Stage: 1
+----------------------------------
+Transmission physics simulation started.
+Digital signal to analog...
+Transmission physics simulation finished.
+Closing data compression process.
+
+----------------------------
+Noise injection. Stage: 2
+----------------------------
+Noise injection process started.
+Injection of white_noise in signal ax
+Noise injection process finished.
+Closing noise injection process.
+
+----------------------------------
+Physical transmission. Stage: 3
+----------------------------------
+Transmission physics simulation started.
+Analog signal to digital...
+Transmission physics simulation finished.
+Closing data compression process.
+
+-------------------------------
+Data decompression. Stage: 4
+-------------------------------
+Original signal lenght: 162500
+Data decompression started.
+Signal length after decompression: 162586
+Data decompression process finished.
+Plotting signal...
+Closing data decompression process.
+
+---------------------------------
+Characteristics extraction. Stage: 5
+---------------------------------
+Statistics extraction started.
+Correlation max for signal ax the is at 81250
+Delay for signal ax is 0
+For signal ax the MSE is: 6014.30133836
+Power Density Spectrum calculated for signal ax
+PDS difference calculated for signal ax
+Saving Correlation into file...
+Saving Delay into file...
+Saving MSE into file...
+Saving PDS into file...
+Saving PDScomparison into file...
+Statistics extraction process finished.
+Closing statistics extraction process.
+```
