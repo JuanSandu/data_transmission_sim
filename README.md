@@ -1,7 +1,7 @@
 # Data Transmission Simulator
 Python simulator for data transmission over desired channel. 
 
-* Advice: The current version is very incompleted. There are lot of bugs to be fixed and functionalities to be developed. *
+*Advice: The current version is very incompleted. There are lot of bugs to be fixed and functionalities to be developed.*
 
 This project aims to emulate the communication process over a simulated physical link (RF, water acoustics or whatever) considering the effect of the noise over the analogized signal (from a original digital one), so that, bit-flip due to noise, attenuation, echo and other problems sources can be analyzed by simulation.
 
