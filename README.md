@@ -12,7 +12,10 @@ All modules can be configured by modifying the configuration JSON file, which ha
 ## Launch
 The simulator has been developed and run in Ubuntu 16.04 LTS, so there is not guarantee for it to work in another environment. Before trying to launch the simulator, check you have installed all required python libraries. A requirements file will be uploaded soon.
 
-In order to launch the simulator, you have to modify the configuration file *sim_configuration.json* for the desired options and to modify the bash launcher to select the simulation sequence and, if the KPI extractor is used, select an origin signal name and another final signal name (as they may be compared for some of the KPI calculation). Afther that, change the access mode of the bash script (if necessary) using:
+In order to launch the simulator, you have to modify the configuration file **sim_configuration.json** for the desired options and to modify the bash launcher to select the simulation sequence. To change the input signal of the transmission simulation, change the field *general -> signals_df_name* (without the file extension) and move your signal CSV file into the *original_data* folder, inside *Data*. 
+And sure, change the name of the signal in *general -> signals_names* in the same configuration JSON file (for the moment, it is only possible to launch the simulation with one signal at the same time, there is a bug party with this). Tune the rest of the parameters as you like and, if you find more bugs and errors, notify them, please.
+
+If the KPI extractor is used, select an origin signal name and another final signal name (as they may be compared for some of the KPI calculation). Afther that, change the access mode of the bash script (if necessary) using:
 
 ```
 chmod 777 simulation_orchestrator
