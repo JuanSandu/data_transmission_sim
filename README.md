@@ -18,7 +18,7 @@ And sure, change the name of the signal in *general -> signals_names* in the sam
 If the KPI extractor is used, select an origin signal name and another final signal name (as they may be compared for some of the KPI calculation). Afther that, change the access mode of the bash script (if necessary) using:
 
 ```
-chmod 777 simulation_orchestrator
+chmod 777 simulation_orchestrator.bash
 ```
 
 and run the simulation orchestrator:
